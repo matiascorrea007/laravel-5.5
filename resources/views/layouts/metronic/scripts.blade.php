@@ -69,10 +69,10 @@
         {!!Html::script('admin/metronic/js/mis-modulos/usuarios.js')!!}
 
         <!--MIS FUNCIONES-->
-        {!!Html::script('admin/metronic/js/mis-funciones/datatable.js')!!}
+        
         
        
-
+@yield('mis-scripts')
 
 
 <!--dropzone-->

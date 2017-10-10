@@ -27,9 +27,7 @@ class UsuariosController extends Controller
     public function listarUsuariosDatatable(Request $request)
     {       
         $users = User::all();
-
         return Datatables::of($users)->make();
-
     }
 
 

@@ -81,7 +81,7 @@
         </tbody>
         @endforeach
     </table>
-    
+
                 </div>
 
 
@@ -109,6 +109,9 @@
                           
 
 
+@section('mis-scripts')
+{!!Html::script('admin/metronic/js/mis-funciones/datatable.js')!!}
+@stop
 
 
 
