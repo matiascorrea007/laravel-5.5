@@ -38,7 +38,11 @@
         {!!Html::style('admin/metronic/css/sweetalert.css')!!}
         {!!Html::style('admin/metronic/css/toastr.css')!!}
 
-
+        <!-- datatable -->
+        {!!Html::style('admin/metronic/plugins/datatables/jquery.dataTables.min.css')!!}
+        {!!Html::style('admin/metronic/plugins/datatables/dataTables.bootstrap.css')!!}
+       
+        <!-- MIS ESTILOS -->
 
 
         <link rel="shortcut icon" href="favicon.ico" /> 

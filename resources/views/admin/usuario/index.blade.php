@@ -61,48 +61,35 @@
 
 
         </div><!--portlet-title-->
+
     <div class="portlet-body">
-        <div class="table-scrollable">
-            <table class="table table-hover table-light">
-                <thead>
-                    <tr>
-                      <th>#Id</th>
-                      <th>Nombre</th>
-                      <th>Correo</th>
-                      <th>Telefono</th>
-                      <th>Direccion</th>
-                      <th>Tipo</th>
-                      <th>Puntos</th>
-                      <th class="col-md-4">Operaciones</th> 
-                    </tr>
-                </thead>
-                @foreach($users as $user)
-                <tbody>
-                    <td>{{ $user -> id}}</td>
-                    <td>{{ $user -> nombre}} {{ $user -> apellido}}</td>
-                    <td>{{ $user -> email}}</td>
-                    <td>{{ $user -> telefono}}</td>
-                    <td>{{ $user -> direccion}}</td>
-                    <td></td>
-                    <td>{{ $user->puntos}}</td>
-      
-<td>
-<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ver-{{ $user->id }}"><i class="fa fa-expand"> Ver</i></button>
+            <table id="mydatatable" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>id</th>
+                      <th>nombre</th>
+                      <th>correo</th>
+                      <th>telefono</th>
+                      <th>direccion</th>
+                      <th>puntos</th>
+                      <th class="col-md-4">operaciones</th> 
+            </tr>
+        </thead>
+        @foreach($users as $user)
+        <tbody>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Edit-{{ $user->id }}"><i class="fa fa-edit"> Editar</i></button>
-
-<!--esto es para que solo el administrador pueda eliminar-->
-
-<!--para el metodo eliminar necesito de un formulario para ejecutarlo-->
- <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#confirmDelete-{{ $user->id }}"><i class="fa fa-trash-o"> Eliminar</i></button>
- 
-</td>
-
-                    </tbody>
-                      @endforeach
-                        </table>
-                    </div>
+        </tbody>
+        @endforeach
+    </table>
+    
                 </div>
+
+
+
+
+
+
+
             </div>
             <!-- END SAMPLE TABLE PORTLET-->
         </div>
@@ -120,5 +107,9 @@
 
 {!! $users->render() !!} 
                           
+
+
+
+
 
 @endsection

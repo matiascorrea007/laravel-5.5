@@ -48,10 +48,7 @@
         {!!Html::script('admin/metronic/js/quick-sidebar.js')!!}
         {!!Html::script('admin/metronic/js/quick-nav.js')!!}
         <!-- END THEME LAYOUT SCRIPTS -->
-    
-        {!!Html::script('admin/metronic/js/plusis.js')!!}
-
-
+            
 
         <!--sweetalert-->
         {!!Html::script('admin/metronic/js/sweetalert.min.js')!!}
@@ -60,19 +57,22 @@
 
         <!-- Alert Toastr -->
         {!!Html::script('admin/metronic/js/toastr.js')!!} 
+
+        <!-- Datatable -->
+        {!!Html::script('admin/metronic/plugins/datatables/jquery.dataTables.min.js')!!} 
+        {!!Html::script('admin/metronic/plugins/datatables/dataTables.bootstrap.js')!!} 
+      
+
+
+
+        <!--MIS MODULOS-->
+        {!!Html::script('admin/metronic/js/mis-modulos/usuarios.js')!!}
+
+        <!--MIS FUNCIONES-->
+        {!!Html::script('admin/metronic/js/mis-funciones/datatable.js')!!}
         
        
 
-
-
-
-
-
-
-@yield('scriptdatepicker')
-@yield('ventas')
-@yield('compras')
-@yield('presupuestos')
 
 
 <!--dropzone-->

@@ -32,6 +32,7 @@ Route::group(['middleware' => 'web'], function () {
 
     //usuario 
     Route::get('usuario','UsuariosController@index');
+    Route::get('usuario-listar-datatable','UsuariosController@listarUsuariosDatatable');
     Route::get('usuario-create','UsuariosController@create');
     Route::post('usuario-store','UsuariosController@store');
     Route::put('usuario-update/{id}','UsuariosController@update');

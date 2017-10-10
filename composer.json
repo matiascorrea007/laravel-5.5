@@ -16,7 +16,8 @@
         "nwidart/laravel-modules": "^2.4",
         "unisharp/laravel-filemanager": "^1.8",
         "uxweb/sweet-alert": "^1.4",
-        "vinkla/hashids": "^3.3"
+        "vinkla/hashids": "^3.3",
+        "yajra/laravel-datatables-oracle": "~8.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",
