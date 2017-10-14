@@ -10,7 +10,7 @@ use Caffeinated\Shinobi\Models\Role;
 use Caffeinated\Shinobi\Models\Permission;
 
 
-use App\User;
+
 use Session;
 use Redirect;
 use Storage;
