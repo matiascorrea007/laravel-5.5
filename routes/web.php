@@ -20,9 +20,11 @@ Route::get('auto-complete-city', 'GoogleController@index')->name('auto-complete-
 
 Route::get('/logout', 'Auth\LoginController@logout');
 
-Route::get('/redirect', 'LoginController@redirectToProvider');
-Route::get('/callback', 'LoginController@handleProviderCallback');
 
+/*------------LOGIN SOCIAL ----------------*/
+Route::get('/login-social-redirect-{proveedor}', 'SocialController@redirectToProvider');
+Route::get('/login-social-callback-{proveedor}', 'SocialController@handleProviderCallback');
+/*------------LOGIN SOCIAL ----------------*/
 
 
 Route::group(['middleware' => 'web'], function () {
