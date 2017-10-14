@@ -13,24 +13,17 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
 
         <!-- globales -->
-         {!!Html::style('admin/metronic/css/font-awesome.css')!!}
-         {!!Html::style('admin/metronic/css/simple-line-icons.css')!!}
-         {!!Html::style('admin/metronic/css/bootstrap.css')!!}
-         {!!Html::style('admin/metronic/css/bootstrap-switch.css')!!}
-         {!!Html::style('admin/metronic/css/daterangepicker.css')!!}
-         {!!Html::style('admin/metronic/css/morris.css')!!}
-         {!!Html::style('admin/metronic/css/fullcalendar.css')!!}
-         {!!Html::style('admin/metronic/css/jqvmap.css')!!}
-         {!!Html::style('admin/metronic/css/components.css')!!}
-         {!!Html::style('admin/metronic/css/plugins.css')!!}
-        <!-- globales -->
+        {!!Html::style('admin/adminpro/css/bootstrap.min.css')!!}
+        {!!Html::style('admin/adminpro/css/c3.min.css')!!}
+
         
         <!-- layout -->
-         {!!Html::style('admin/metronic/css/layout.css')!!}
-         {!!Html::style('admin/metronic/css/themes/default.min.css')!!}
-         {!!Html::style('admin/metronic/css/custom.css')!!}
-        <!-- layout -->
+        {!!Html::style('admin/adminpro/css/style.css')!!}
+        {!!Html::style('admin/adminpro/css/blue.css')!!}
+        {!!Html::style('admin/adminpro/css/all-page.css')!!}
+
         
+        <!-- dropzone -->
         {!!Html::style('admin/metronic/css/dropzone/dropzone.css')!!}
         {!!Html::style('admin/metronic/css/dropzone/dropzone2.css')!!}
 
@@ -45,21 +38,5 @@
         <!-- MIS ESTILOS -->
 
 
-    <link href="..\assets\plugins\bootstrap\css\bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-    <!-- This page CSS -->
-    <!-- chartist CSS -->
-    <link href="..\assets\plugins\chartist-js\dist\chartist.min.css" rel="stylesheet">
-    <link href="..\assets\plugins\chartist-plugin-tooltip-master\dist\chartist-plugin-tooltip.css" rel="stylesheet">
-    <!--c3 CSS -->
-    <link href="..\assets\plugins\c3-master\c3.min.css" rel="stylesheet">
-    <!--Toaster Popup message CSS -->
-    <link href="..\assets\plugins\toast-master\css\jquery.toast.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css\style.css" rel="stylesheet">
-    <!-- Dashboard 1 Page CSS -->
-    <link href="css\pages\dashboard1.css" rel="stylesheet">
-    <!-- You can change the theme colors from here -->
-    <link href="css\colors\blue.css" id="theme" rel="stylesheet">
-
+        
 </head>

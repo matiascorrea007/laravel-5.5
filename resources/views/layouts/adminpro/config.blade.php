@@ -1,95 +1,50 @@
-<div class="page-head">
-                        <!-- BEGIN PAGE TITLE -->
-                        <div class="page-title">
-                            
+<div class="right-sidebar">
+                    <div class="slimscrollright">
+                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                        <div class="r-panel-body">
+                            <ul id="themecolors" class="m-t-20">
+                                <li><b>With Light sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                                <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme ">12</a></li>
+                            </ul>
+                            <ul class="m-t-20 chatonline">
+                                <li><b>Chat option</b></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="..\assets\images\users\8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                </li>
+                            </ul>
                         </div>
-                        <!-- END PAGE TITLE -->
-                        <!-- BEGIN PAGE TOOLBAR -->
-
-
-                       <!--  <div class="page-toolbar">
-                            <div id="dashboard-report-range" data-display-range="0" class="pull-right tooltips btn btn-fit-height green" data-placement="left" data-original-title="Change dashboard date range">
-                                <i class="icon-calendar"></i>&nbsp;
-                                <span class="thin uppercase hidden-xs"></span>&nbsp;
-                                <i class="fa fa-angle-down"></i>
-                            </div>
-                             BEGIN THEME PANEL 
-                            <div class="btn-group btn-theme-panel">
-                                <a href="javascript:;" class="btn dropdown-toggle" data-toggle="dropdown">
-                                    <i class="icon-settings"></i>
-                                </a>
-                                <div class="dropdown-menu theme-panel pull-right dropdown-custom hold-on-click">
-                                    <div class="row">
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
-                                            <h3>HEADER</h3>
-                                            <ul class="theme-colors">
-                                                <li class="theme-color theme-color-default active" data-theme="default">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Dark Header</span>
-                                                </li>
-                                                <li class="theme-color theme-color-light " data-theme="light">
-                                                    <span class="theme-color-view"></span>
-                                                    <span class="theme-color-name">Light Header</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-8 col-sm-8 col-xs-12 seperator">
-                                            <h3>LAYOUT</h3>
-                                            <ul class="theme-settings">
-                                                <li> Theme Style
-                                                    <select class="layout-style-option form-control input-small input-sm">
-                                                        <option value="square">Square corners</option>
-                                                        <option value="rounded" selected="selected">Rounded corners</option>
-                                                    </select>
-                                                </li>
-                                                <li> Layout
-                                                    <select class="layout-option form-control input-small input-sm">
-                                                        <option value="fluid" selected="selected">Fluid</option>
-                                                        <option value="boxed">Boxed</option>
-                                                    </select>
-                                                </li>
-                                                <li> Header
-                                                    <select class="page-header-option form-control input-small input-sm">
-                                                        <option value="fixed" selected="selected">Fixed</option>
-                                                        <option value="default">Default</option>
-                                                    </select>
-                                                </li>
-                                                <li> Top Dropdowns
-                                                    <select class="page-header-top-dropdown-style-option form-control input-small input-sm">
-                                                        <option value="light">Light</option>
-                                                        <option value="dark" selected="selected">Dark</option>
-                                                    </select>
-                                                </li>
-                                                <li> Sidebar Mode
-                                                    <select class="sidebar-option form-control input-small input-sm">
-                                                        <option value="fixed">Fixed</option>
-                                                        <option value="default" selected="selected">Default</option>
-                                                    </select>
-                                                </li>
-                                                <li> Sidebar Menu
-                                                    <select class="sidebar-menu-option form-control input-small input-sm">
-                                                        <option value="accordion" selected="selected">Accordion</option>
-                                                        <option value="hover">Hover</option>
-                                                    </select>
-                                                </li>
-                                                <li> Sidebar Position
-                                                    <select class="sidebar-pos-option form-control input-small input-sm">
-                                                        <option value="left" selected="selected">Left</option>
-                                                        <option value="right">Right</option>
-                                                    </select>
-                                                </li>
-                                                <li> Footer
-                                                    <select class="page-footer-option form-control input-small input-sm">
-                                                        <option value="fixed">Fixed</option>
-                                                        <option value="default" selected="selected">Default</option>
-                                                    </select>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            END THEME PANEL 
-                        </div> -->
-                        
                     </div>
+                </div>

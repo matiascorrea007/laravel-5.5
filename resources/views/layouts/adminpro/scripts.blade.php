@@ -1,53 +1,24 @@
 
-	    {!!Html::script('admin/metronic/js/jquery3-2-1.js')!!} 
-        {!!Html::script('admin/metronic/js/bootstrap.js')!!} 
-        {!!Html::script('admin/metronic/js/js.cookie.min.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.slimscroll.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.blockui.min.js')!!}
-        {!!Html::script('admin/metronic/js/bootstrap-switch.js')!!}
-        {!!Html::script('admin/metronic/js/moment.min.js')!!}
-        {!!Html::script('admin/metronic/js/daterangepicker.js')!!}
-        {!!Html::script('admin/metronic/js/morris.js')!!}
-        {!!Html::script('admin/metronic/js/raphael-min.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.waypoints.min.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.counterup.js')!!}
-        {!!Html::script('admin/metronic/js/fullcalendar.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.flot.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.flot.resize.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.flot.categories.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.easypiechart.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.sparkline.min.js')!!}
-        {!!Html::script('admin/metronic/js/components-color-pickers.js')!!}
-        {!!Html::script('admin/metronic/js/bootstrap-colorpicker.js')!!}
-        {!!Html::script('admin/metronic/js/app.js')!!}
-        {!!Html::script('admin/metronic/js/dashboard.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.minicolors.js')!!}
-        {!!Html::script('admin/metronic/js/horizontal-timeline.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.counterup.js')!!}
-        {!!Html::script('admin/metronic/js/amcharts.js')!!}
-        {!!Html::script('admin/metronic/js/serial.js')!!}
-        {!!Html::script('admin/metronic/js/pie.js')!!}
-        {!!Html::script('admin/metronic/js/radar.js')!!}
-        {!!Html::script('admin/metronic/js/light.js')!!}
-        {!!Html::script('admin/metronic/js/patterns.js')!!}
-        {!!Html::script('admin/metronic/js/chalk.js')!!}
-        {!!Html::script('admin/metronic/js/worldLow.js')!!}
-        {!!Html::script('admin/metronic/js/ammap.js')!!}
-        {!!Html::script('admin/metronic/js/amstock.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.vmap.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.vmap.russia.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.vmap.world.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.vmap.europe.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.vmap.germany.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.vmap.usa.js')!!}
-        {!!Html::script('admin/metronic/js/jquery.vmap.sampledata.js')!!}
-		
-		<!-- BEGIN THEME LAYOUT SCRIPTS -->
-		{!!Html::script('admin/metronic/js/demo.js')!!}
-        {!!Html::script('admin/metronic/js/layout.js')!!}
-        {!!Html::script('admin/metronic/js/quick-sidebar.js')!!}
-        {!!Html::script('admin/metronic/js/quick-nav.js')!!}
-        <!-- END THEME LAYOUT SCRIPTS -->
+    {!!Html::script('admin/adminpro/js/jquery.min.js')!!} 
+    {!!Html::script('admin/adminpro/js/popper.min.js')!!} 
+    {!!Html::script('admin/adminpro/js/bootstrap.min.js')!!} 
+    {!!Html::script('admin/adminpro/js/perfect-scrollbar.jquery.min.js')!!} 
+    {!!Html::script('admin/adminpro/js/waves.js')!!} 
+    {!!Html::script('admin/adminpro/js/sidebarmenu.js')!!} 
+    {!!Html::script('admin/adminpro/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js')!!} 
+
+     <!--toltip JavaScript -->
+     {!!Html::script('admin/adminpro/js/custom.min.js')!!} 
+     <!--c3 JavaScript -->
+     {!!Html::script('admin/adminpro/plugins/d3/d3.min.js')!!} 
+     {!!Html::script('admin/adminpro/c3-master/c3.min.js')!!} 
+     <!-- Style switcher -->
+     {!!Html::script('admin/adminpro/plugins/styleswitcher/jQuery.style.switcher.js')!!} 
+  
+
+
+
+
             
 
         <!--sweetalert-->
