@@ -1,76 +1,90 @@
-@extends('layouts.metronic')
+@extends('layouts.admin-pro')
 @section('content')
 <!-- muestra mensaje que se a modificado o creado exitosamente-->
 <!--include('alerts.success')-->
 
 
- <div class="row">
-    <div class="col-md-12">
-    <div class="portlet light ">
-        <div class="portlet-title">
-            <div class="caption">
 
-<i class="icon-user font-red"></i>
-<span class="caption-subject font-red sbold uppercase">Seccion de Usuarios</span>
+           <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor"><i class="icon-user font-red"></i>
+                  <span class="caption-subject font-red sbold uppercase">Seccion de Permisos</span></h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{!! URL::to('/') !!}">Home</a></li>
+                            <li class="breadcrumb-item "><a href="{!! URL::to('/usuario') !!}">Usuarios</a></li>
+                            <li class="breadcrumb-item active"><a href="#">Permisos</a></li>
+                        </ol>
+                    </div>
+                    <div class="">
+                        <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+
 @include('alerts.request')
 @include('alerts.success')
 
-    <div><br>
-    </div>
-
- <div class="box-body">
-  <ul class="nav nav-tabs">
-    <li class=""><a href="{{ url('usuario') }}">Usuarios</a></li>
-    <li ><a href="{{ url('usuario-roles') }}">Roles</a></li>
-    <li class="active"><a href="{{ url('usuario-permisos') }}">Permisos</a></li>
-  </ul>
-</div>  
 
 
 
-<!--buscador-->
-{!!Form::open(['url'=>'usuario', 'method'=>'GET' , 'class'=>'navbar-form navbar-left' , 'role'=>'Search'])!!}
-<div class="form-group">
-	{!!Form::label('')!!}
-	{!!Form::text('nombre',null,['class'=>'form-control','placeholder'=>'nombre y apellido'])!!}
-  {!!Form::text('email',null,['class'=>'form-control','placeholder'=>'Email'])!!}
- 
- <button type="submit" class="glyphicon glyphicon-search btn btn-success"> BUSCAR </button>
-</div>
+        <h4 class="card-title">
+
+      <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#crear-permisos"><i class="fa fa-plus fa-lg"> </i></button>
+
+      
+           </h4>
+
+           
+
+<ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item"> <a class="nav-link "  href="{{ url('usuario') }}" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Usuarios</span></a> </li>
+          
+          <li class="nav-item"> <a class="nav-link "  href="{{ url('usuario-roles') }}" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Roles</span></a> </li>
+          
+          <li class="nav-item"> <a class="nav-link active"  href="{{ url('usuario-permisos') }}" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Permisos</span></a> </li>
+      </ul>
+
+                                <br><br>
+
+
+  <!--buscador-->
+{!!Form::open(['url'=>'usuario', 'method'=>'GET' , 'class'=>' form-group m-t-40 row' , 'role'=>'Search'])!!}
+  {!!Form::label('')!!}
+  <div class="form-group col-md-3 m-t-20">
+  {!!Form::text('nombre',null,['class'=>'form-control form-control-line','placeholder'=>'nombre y apellido'])!!}
+  </div>
+
+  <div class="form-group col-md-3 m-t-20">
+  {!!Form::text('email',null,['class'=>'form-control form-control-line','placeholder'=>'Email'])!!}
+  </div>
+
+  <div class="form-group col-md-3 m-t-20">
+  <button type="submit" class="glyphicon glyphicon-search btn btn-success"> BUSCAR </button>
+  </div>
 {!!Form::close()!!}
  <!--endbuscador-->
 
 
-     </div><!--end caption-->
-
-
-
-    <div class="actions">
-       <div class="btn-group btn-group-devided" >
-
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#crear-permisos"><i class="fa fa-plus fa-lg"> </i></button>
-               
-      <a class="btn btn-success" data-toggle="modal" data-target="#importuser" >
-      <i class="fa  fa-download fa-lg"></i> Importar</a>
-
-      <a class="btn btn-success" href="{!! URL::to('/userExport') !!}">
-      <i class="fa  fa-file-excel-o fa-lg"></i> exportar</a>
-      
-       </div>
-   </div>
-
-
-        </div><!--portlet-title-->
-    <div class="portlet-body">
-        <div class="table-scrollable">
-            <table class="table table-hover table-light">
-                <thead>
+      <h6 class="card-subtitle"></h6>
+      <div class="table-responsive m-t-40">
+      <table id="" class="table full-color-table full-inverse-table hover-table" cellspacing="0" width="100%">
+               <thead>
                     <tr>
                       <th>#Id</th>
                       <th>Nombre</th>
                       <th>slug</th>
                       <th>descripcion</th>
-                      <th class="col-md-4">Operaciones</th> 
+                      <th >Operaciones</th> 
                     </tr>
                 </thead>
                 @foreach($permissions as $permission)
@@ -94,12 +108,17 @@
                     </tbody>
                       @endforeach
                         </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END SAMPLE TABLE PORTLET-->
-        </div>
-    </div>
+
+
+
+
+
+
 
 <!--modal crear usuario-->
  @include('admin.usuario.modal.crear-permisos')
@@ -112,6 +131,14 @@
 <!--para renderizar la paginacion-->
 
 {!! $permissions->render() !!} 
+
+
+
+
+
+
+
+
                           
 
 @endsection
