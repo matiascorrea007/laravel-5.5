@@ -1,4 +1,4 @@
-<div class="modal fade" id="crear-usuario" tabindex="-1" role="dialog" aria-labelledby="confirmDelete">
+<div class="modal fade modal-fullscreen" id="crear-usuario" tabindex="-1" role="dialog" aria-labelledby="confirmDelete">
  <div class="modal-dialog modal-full" role="document">
      <div class="modal-content">
          <div class="modal-header">

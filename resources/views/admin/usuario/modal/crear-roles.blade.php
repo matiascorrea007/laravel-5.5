@@ -1,4 +1,4 @@
-<div class="modal fade" id="crear-roles" tabindex="-1" role="dialog" aria-labelledby="confirmDelete">
+<div class="modal fade bs-example-modal-lg" id="crear-roles" tabindex="-1" role="dialog" aria-labelledby="confirmDelete">
  <div class="modal-dialog modal-full" role="document">
      <div class="modal-content">
          <div class="modal-header">

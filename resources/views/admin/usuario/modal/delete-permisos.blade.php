@@ -1,5 +1,5 @@
 @foreach($permissions as $permission)
-<div class="modal fade" id="confirmDeleteRolePermisos-{{ $permission->id }}" tabindex="-1" role="dialog" aria-labelledby="confirmDelete">
+<div class="modal fade" id="confirmDeletePermisos-{{ $permission->id }}" tabindex="-1" role="dialog" aria-labelledby="confirmDelete">
  <div class="modal-dialog" role="document">
      <div class="modal-content">
          <div class="modal-header">

@@ -31,8 +31,6 @@
         
 
         <!-- Datatable -->
-   
-      
       <script src="admin/metronic/plugins/datatables/jquery.dataTables.min.js"></script>
     <!-- start - This is for export functionality only -->
     
@@ -43,6 +41,7 @@
         {!!Html::script('admin/adminpro/js/mis-modulos/usuarios.js')!!}
 
         <!--MIS FUNCIONES-->
+        {!!Html::script('admin/adminpro/js/mis-funciones/full-modal.js')!!}
         
         
        

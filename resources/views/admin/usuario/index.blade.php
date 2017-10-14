@@ -60,7 +60,7 @@
                                 <br><br>
 
                                 <!--buscador-->
-{!!Form::open(['url'=>'usuario', 'method'=>'GET' , 'class'=>' form-material m-t-40 row' , 'role'=>'Search'])!!}
+{!!Form::open(['url'=>'usuario', 'method'=>'GET' , 'class'=>' form-group m-t-40 row' , 'role'=>'Search'])!!}
 
   {!!Form::label('')!!}
   
@@ -88,7 +88,7 @@
                                                 <th>correo</th>
                                                 <th>telefono</th>
                                                 <th>puntos</th>
-                                                <th class="col-md-4">operaciones</th> 
+                                                <th >operaciones</th> 
                                             </tr>
                                         </thead>
                                         @foreach($users as $user)
@@ -126,6 +126,16 @@
 
 
 @section('mis-scripts')
+
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+
+
 {!!Html::script('admin/adminpro/js/mis-funciones/datatable.js')!!}
 @stop
 
