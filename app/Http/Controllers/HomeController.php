@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Debugbar; //Debugbar::info($user);
 use Auth;
 use Hashids;
+use Alert;
 
 class HomeController extends Controller
 {
@@ -25,7 +26,7 @@ class HomeController extends Controller
     {
 
         
-        Debugbar::info();
+          Alert::success('Mensaje existoso', 'Creado');
 
 
         return view('admin.index');

@@ -5,39 +5,42 @@
     {!!Html::script('admin/adminpro/js/perfect-scrollbar.jquery.min.js')!!} 
     {!!Html::script('admin/adminpro/js/waves.js')!!} 
     {!!Html::script('admin/adminpro/js/sidebarmenu.js')!!} 
-    {!!Html::script('admin/adminpro/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js')!!} 
+    {!!Html::script('admin/adminpro/js/custom.min.js')!!} 
 
      <!--toltip JavaScript -->
-     {!!Html::script('admin/adminpro/js/custom.min.js')!!} 
+     {!!Html::script('admin/adminpro/plugins/chartist-js/dist/chartist.min.js')!!} 
+     {!!Html::script('admin/adminpro/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js')!!} 
+
      <!--c3 JavaScript -->
      {!!Html::script('admin/adminpro/plugins/d3/d3.min.js')!!} 
-     {!!Html::script('admin/adminpro/c3-master/c3.min.js')!!} 
+     {!!Html::script('admin/adminpro/js/c3.min.js')!!} 
+
+     {!!Html::script('admin/adminpro/plugins/toast-master/js/jquery.toast.js')!!} 
+     {!!Html::script('admin/adminpro/js/dashboard1.js')!!} 
+    
      <!-- Style switcher -->
      {!!Html::script('admin/adminpro/plugins/styleswitcher/jQuery.style.switcher.js')!!} 
   
 
 
+    <!--sweetalert-->
+    {!!Html::script('admin/adminpro/plugins/sweetalert/sweetalert.min.js')!!}
+    {!!Html::script('admin/adminpro/plugins/sweetalert/sweetalert-dev.js')!!}
+    @include('sweet::alert')
 
-
-            
-
-        <!--sweetalert-->
-        {!!Html::script('admin/metronic/js/sweetalert.min.js')!!}
-        {!!Html::script('admin/metronic/js/sweetalert-dev.js')!!}
-        @include('sweet::alert')
-
-        <!-- Alert Toastr -->
-        {!!Html::script('admin/metronic/js/toastr.js')!!} 
+        
 
         <!-- Datatable -->
-        {!!Html::script('admin/metronic/plugins/datatables/jquery.dataTables.min.js')!!} 
-        {!!Html::script('admin/metronic/plugins/datatables/dataTables.bootstrap.js')!!} 
+   
       
+      <script src="admin/metronic/plugins/datatables/jquery.dataTables.min.js"></script>
+    <!-- start - This is for export functionality only -->
+    
 
 
 
         <!--MIS MODULOS-->
-        {!!Html::script('admin/metronic/js/mis-modulos/usuarios.js')!!}
+        {!!Html::script('admin/adminpro/js/mis-modulos/usuarios.js')!!}
 
         <!--MIS FUNCIONES-->
         

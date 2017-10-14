@@ -1,87 +1,106 @@
-@extends('layouts.metronic')
+@extends('layouts.admin-pro')
 @section('content')
 <!-- muestra mensaje que se a modificado o creado exitosamente-->
 <!--include('alerts.success')-->
 
 
- <div class="row">
-    <div class="col-md-12">
-    <div class="portlet light ">
-        <div class="portlet-title">
-            <div class="caption">
+              <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor"><i class="icon-user font-red"></i>
+                  <span class="caption-subject font-red sbold uppercase">Seccion de Usuarios</span></h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{!! URL::to('/') !!}">Home</a></li>
+                            <li class="breadcrumb-item active"><a href="{!! URL::to('/usuario') !!}">Usuarios</a></li>
+                        </ol>
+                    </div>
+                    <div class="">
+                        <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                    </div>
+                </div>
 
-<i class="icon-user font-red"></i>
-<span class="caption-subject font-red sbold uppercase">Seccion de Usuarios</span>
+
+
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+
 @include('alerts.request')
 @include('alerts.success')
 
-    <div><br>
-    </div>
-
- <div class="box-body">
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="{{ url('usuario') }}">Usuarios</a></li>
-    <li class=""><a href="{{ url('usuario-roles') }}">Roles</a></li>
-    <li class=""><a href="{{ url('usuario-permisos') }}">Permisos</a></li>
-  </ul>
-</div>  
 
 
 
-<!--buscador-->
-{!!Form::open(['url'=>'usuario', 'method'=>'GET' , 'class'=>'navbar-form navbar-left' , 'role'=>'Search'])!!}
-<div class="form-group">
-	{!!Form::label('')!!}
-	{!!Form::text('nombre',null,['class'=>'form-control','placeholder'=>'nombre y apellido'])!!}
-  {!!Form::text('email',null,['class'=>'form-control','placeholder'=>'Email'])!!}
- 
- <button type="submit" class="glyphicon glyphicon-search btn btn-success"> BUSCAR </button>
-</div>
-{!!Form::close()!!}
- <!--endbuscador-->
+        <h4 class="card-title">
 
+      <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#crear-usuario"><i class="fa fa-plus fa-lg"> </i></button>
 
-     </div><!--end caption-->
-
-
-
-    <div class="actions">
-       <div class="btn-group btn-group-devided" >
-
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#crear-usuario"><i class="fa fa-plus fa-lg"> </i></button>
-               
-      <a class="btn btn-success" data-toggle="modal" data-target="#importuser" >
+      <a class="btn btn-success  pull-right" data-toggle="modal" data-target="#importuser" >
       <i class="fa  fa-download fa-lg"></i> Importar</a>
 
-      <a class="btn btn-success" href="{!! URL::to('/userExport') !!}">
+      <a class="btn btn-success  pull-right" href="{!! URL::to('/userExport') !!}">
       <i class="fa  fa-file-excel-o fa-lg"></i> exportar</a>
       
-       </div>
-   </div>
+           </h4>
 
+           
 
-        </div><!--portlet-title-->
+<ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item"> <a class="nav-link active"  href="{{ url('usuario') }}" role="tab"><span class="hidden-sm-up"><i class="ti-home"></i></span> <span class="hidden-xs-down">Usuarios</span></a> </li>
+          
+          <li class="nav-item"> <a class="nav-link"  href="{{ url('usuario-roles') }}" role="tab"><span class="hidden-sm-up"><i class="ti-user"></i></span> <span class="hidden-xs-down">Roles</span></a> </li>
+          
+          <li class="nav-item"> <a class="nav-link"  href="{{ url('usuario-permisos') }}" role="tab"><span class="hidden-sm-up"><i class="ti-email"></i></span> <span class="hidden-xs-down">Permisos</span></a> </li>
+      </ul>
 
-    <div class="portlet-body">
-            <table id="mydatatable" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>id</th>
-                      <th>nombre</th>
-                      <th>correo</th>
-                      <th>telefono</th>
-                      <th>direccion</th>
-                      <th>puntos</th>
-                      <th class="col-md-4">operaciones</th> 
-            </tr>
-        </thead>
-        @foreach($users as $user)
-        <tbody>
+                                <br><br>
 
-        </tbody>
-        @endforeach
-    </table>
+                                <!--buscador-->
+{!!Form::open(['url'=>'usuario', 'method'=>'GET' , 'class'=>' form-material m-t-40 row' , 'role'=>'Search'])!!}
 
+  {!!Form::label('')!!}
+  
+  <div class="form-group col-md-3 m-t-20">
+  {!!Form::text('nombre',null,['class'=>'form-control form-control-line','placeholder'=>'nombre y apellido'])!!}
+  </div>
+
+  <div class="form-group col-md-3 m-t-20">
+  {!!Form::text('email',null,['class'=>'form-control form-control-line','placeholder'=>'Email'])!!}
+  </div>
+
+  <div class="form-group col-md-3 m-t-20">
+  <button type="submit" class="glyphicon glyphicon-search btn btn-success"> BUSCAR </button>
+  </div>
+{!!Form::close()!!}
+
+ <!--endbuscador-->
+                                <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6>
+                                <div class="table-responsive m-t-40">
+                                    <table id="mydatatable" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>id</th>
+                                                <th>nombre</th>
+                                                <th>correo</th>
+                                                <th>telefono</th>
+                                                <th>puntos</th>
+                                                <th class="col-md-4">operaciones</th> 
+                                            </tr>
+                                        </thead>
+                                        @foreach($users as $user)
+                                          <tbody>
+
+                                         </tbody>
+                                        @endforeach
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -90,10 +109,7 @@
 
 
 
-            </div>
-            <!-- END SAMPLE TABLE PORTLET-->
-        </div>
-    </div>
+
 
 <!--modal crear usuario-->
  @include('admin.usuario.modal.crear-usuario')
@@ -105,12 +121,12 @@
 
 <!--para renderizar la paginacion-->
 
-{!! $users->render() !!} 
+
                           
 
 
 @section('mis-scripts')
-{!!Html::script('admin/metronic/js/mis-funciones/datatable.js')!!}
+{!!Html::script('admin/adminpro/js/mis-funciones/datatable.js')!!}
 @stop
 
 

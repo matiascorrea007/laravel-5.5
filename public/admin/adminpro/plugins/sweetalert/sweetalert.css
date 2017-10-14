@@ -1,6 +1,6 @@
 body.stop-scrolling {
   height: 100%;
-  overflow: visible; }
+  overflow: hidden; }
 
 .sweet-overlay {
   background-color: black;
@@ -21,7 +21,7 @@ body.stop-scrolling {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   width: 478px;
   padding: 17px;
-  border-radius: 2px;
+  border-radius: 5px;
   text-align: center;
   position: fixed;
   left: 50%;
@@ -176,8 +176,8 @@ body.stop-scrolling {
     box-shadow: none;
     font-size: 17px;
     font-weight: 500;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 4px;
+    border-radius: 5px;
     padding: 10px 32px;
     margin: 26px 5px 0 5px;
     cursor: pointer; }
@@ -360,7 +360,7 @@ body.stop-scrolling {
           transform: rotate(-45deg); }
     .sweet-alert .sa-icon.sa-custom {
       background-size: contain;
-      border-radius: 50%;
+      border-radius: 0;
       border: none;
       background-position: center center;
       background-repeat: no-repeat; }

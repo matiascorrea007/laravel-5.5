@@ -14,13 +14,20 @@
 
         <!-- globales -->
         {!!Html::style('admin/adminpro/css/bootstrap.min.css')!!}
-        {!!Html::style('admin/adminpro/css/c3.min.css')!!}
 
-        
+        <!-- chartist CSS -->
+        {!!Html::style('admin/adminpro/plugins/chartist-js/dist/chartist.min.css')!!}
+        {!!Html::style('admin/adminpro/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css')!!}
+        <!--c3 CSS -->
+        {!!Html::style('admin/adminpro/css/c3.min.css')!!}
+        <!--Toaster Popup message CSS -->
+        {!!Html::style('admin/adminpro/plugins/toast-master/css/jquery.toast.css')!!}
+
         <!-- layout -->
         {!!Html::style('admin/adminpro/css/style.css')!!}
-        {!!Html::style('admin/adminpro/css/blue.css')!!}
         {!!Html::style('admin/adminpro/css/all-page.css')!!}
+        {!!Html::style('admin/adminpro/css/blue.css')!!}
+        
 
         
         <!-- dropzone -->
@@ -28,7 +35,7 @@
         {!!Html::style('admin/metronic/css/dropzone/dropzone2.css')!!}
 
         <!-- sweetalert -->
-        {!!Html::style('admin/metronic/css/sweetalert.css')!!}
+        {!!Html::style('admin/adminpro/plugins/sweetalert/sweetalert.css')!!}
         {!!Html::style('admin/metronic/css/toastr.css')!!}
 
         <!-- datatable -->

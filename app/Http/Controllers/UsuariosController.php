@@ -1,23 +1,21 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+use Alert;
 use App\Http\Requests\UserCreateRequest;
 use App\Http\Requests\UserUpdateRequest;
-
-use Caffeinated\Shinobi\Models\Role;
-use Caffeinated\Shinobi\Models\Permission;
-
-
-
-use Session;
-use Redirect;
-use Storage;
+use App\User;
 use Auth;
+use Caffeinated\Shinobi\Models\Permission;
+use Caffeinated\Shinobi\Models\Role;
 use DB;
-use Alert;
 use DataTables;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Redirect;
+use Session;
+use Storage;
+
 
 
 
